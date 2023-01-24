@@ -1,6 +1,14 @@
 # java-springboot-restapi
 Java Springboot Basic REST API with MySQL Driver Connector and Hibernate ORM JPA [or you just use JDBA]
 
+# Backend Prod Deployment (On [Railway](https://railway.app/))
+```
+https://java-springboot-restapi-production.up.railway.app/api/welcome
+```
+```
+https://java-springboot-restapi-production.up.railway.app/api/products
+```
+
 - Todo:
   + Implement Auth
   + Implement Association
@@ -46,32 +54,32 @@ You can run this application from your favorite IDE or by running the following 
 #### /api/products
 #### header: [Content-Type: application/json]
 ```
-http://localhost:8080/api/products
+https://java-springboot-restapi-production.up.railway.app/api/products
 ```
 
 ### [GET] Find All Products 
 #### /api/products
 ```
-http://localhost:8080/api/products
+https://java-springboot-restapi-production.up.railway.app/api/products
 ```
 
 ### [GET] Find One Product by Id
 #### /api/products/{id}
 ```
-http://localhost:8080/api/products/{id}
+https://java-springboot-restapi-production.up.railway.app/api/products/{id}
 ```
 
 ### [PUT] Update One Product
 #### /api/products/
 #### header: [Content-Type: application/json]
 ```
-http://localhost:8080/api/products
+https://java-springboot-restapi-production.up.railway.app/api/products
 ```
 
 ### [DELETE] Update One Product
 #### /api/products/{id}
 ```
-http://localhost:8080/api/products/{id}
+https://java-springboot-restapi-production.up.railway.app/api/products/{id}
 ```
 
 <a id="prod"></a>
