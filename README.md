@@ -1,2 +1,2 @@
 # java-springboot-restapi
-java-springboot-restapi
+Java Springboot Basic REST API with MySQL
