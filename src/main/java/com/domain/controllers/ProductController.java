@@ -1,6 +1,7 @@
 package com.domain.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -53,5 +54,11 @@ public class ProductController {
         return productService.save(product);
     }
 
-    
+    //=== 5. Delete One Product by Id
+    @DeleteMapping("/{id}")
+    public void removeOne(@PathVariable("id") Long id) {
+        System.out.println("Deleting product...");
+        productService.removeOne(id);
+    }
+
 }
