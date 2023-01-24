@@ -12,8 +12,10 @@ import javax.persistence.Table;
 @Table(name = "tbl_product") // optional, but it can help naming the jpa to the mysql demoapi table product
 public class Product implements Serializable {
     
-    // DEFINISI FIELD
+    // Serial Version
+    private static final long serialVersionUID = 1L;
 
+    // DEFINISI FIELD
     // PRIMARY KEY [harus anotasi memakai Id]
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
