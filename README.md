@@ -167,4 +167,5 @@ jobs:
           package: ${{ env.ASC_PACKAGE_PATH }}/**/*.jar
 ```
 
-ref: [link](https://www.youtube.com/watch?v=Z0JfmObjKRw)
+ref restapi tutorial: [link](https://www.youtube.com/watch?v=Z0JfmObjKRw)
+ref springboot mysql/postgre prod deployment: [link](https://www.youtube.com/watch?v=5sVxvF47dcU)
