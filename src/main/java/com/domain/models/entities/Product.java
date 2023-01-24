@@ -2,6 +2,7 @@ package com.domain.models.entities;
 
 import java.io.Serializable;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id; // for primary key
 import javax.persistence.GeneratedValue; // for generate autoincrement id
@@ -21,10 +22,13 @@ public class Product implements Serializable {
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name="product_name", length=100)
     private String name;
 
+    @Column(name="product_description", length=500)
     private String description;
 
+    // default
     private Double price;
 
     // Constructor
