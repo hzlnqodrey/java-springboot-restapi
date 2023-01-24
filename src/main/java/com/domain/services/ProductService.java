@@ -7,6 +7,7 @@ package com.domain.services;
 // akan dicek data transaksi, cek tabel, cek field, cek saldo dkk (gitulah pokoknya)
 
 import java.util.List;
+import java.util.Optional;
 
 import javax.transaction.Transactional;
 
@@ -31,7 +32,16 @@ public class ProductService {
 
     // Find One (Read One Product by ID)
     public Product findOne(Long id) {
-        return productRepo.findById(id).get();
+        
+        // Handling if the requested ID is not found in DATABASE
+        // Use Optional Object untuk error handling
+        Optional<Product> product = productRepo.findById(id);
+
+        if ( !product.isPresent() ) {
+            return null;
+        }
+
+        return product.get();
     }
 
     // Find All (Read All Products)
