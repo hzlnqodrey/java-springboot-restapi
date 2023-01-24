@@ -6,6 +6,8 @@ package com.domain.services;
 // nah flow untuk mengimplement transfer itu akan ada di class2 service
 // akan dicek data transaksi, cek tabel, cek field, cek saldo dkk (gitulah pokoknya)
 
+import java.util.List;
+
 import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,5 +44,9 @@ public class ProductService {
         productRepo.deleteById(id);
     }
 
+    // Search Product by Name
+    public List<Product> findByName(String name) {
+        return productRepo.findByNameContains(name);
+    }
 
 }
