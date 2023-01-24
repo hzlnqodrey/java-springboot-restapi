@@ -29,7 +29,14 @@ public class Product implements Serializable {
     private String description;
 
     // default
-    private Double price;
+    private double price;
+
+
+    // U NEED TO ASSIGN THIS
+    //=== Class Self Constructor | ref error (https://stackoverflow.com/questions/44088360/org-hibernate-instantiationexception-no-default-constructor-for-entity-princ)
+    public Product() {
+
+    }
 
     // Constructor
     public Product(Long id, String name, String description, Double price) {
