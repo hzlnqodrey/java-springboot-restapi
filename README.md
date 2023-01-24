@@ -74,7 +74,7 @@ http://localhost:8080/api/products
 http://localhost:8080/api/products/{id}
 ```
 
-<a id="build"></a>
+<a id="prod"></a>
 ## Building for Production 
 
 If you want to build an artifact that can be used in production you have 2 options. This application uses `JAR` as the 
