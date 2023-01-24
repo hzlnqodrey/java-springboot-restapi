@@ -2,6 +2,7 @@ package com.domain.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -33,6 +34,12 @@ public class ProductController {
     @GetMapping
     public Iterable<Product> findAll() {
         return productService.findAll();
+    }
+
+    //=== 3. Find One Product by Id
+    @GetMapping("/{id}")
+    public Product findOne(@PathVariable("id") Long id) {
+        return productService.findOne(id);
     }
 
 }
