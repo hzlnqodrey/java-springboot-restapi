@@ -1,7 +1,7 @@
 package com.domain.controllers;
 
 import org.springframework.web.bind.annotation.GetMapping; // GET METHOD
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PostMapping; // POST METHOD
 import org.springframework.web.bind.annotation.RequestMapping; // for URL MAPPING / ENDPOINT
 import org.springframework.web.bind.annotation.RestController;
 
